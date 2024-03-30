@@ -1,0 +1,11 @@
+﻿{
+  "id": "scorerunify",
+  "name": "Scorerunify",
+  "version": "1.0.0",
+  "authors": "Nerd",
+  "description": "Adds Hunter-like cycle countdown and permadeath mechanics to all slugcats.",
+  "requirements": [],
+  "requirements_names": [],
+  "tags": [ "Tools" ],
+  "checksum_override_version": false
+}

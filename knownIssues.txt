@@ -1,0 +1,9 @@
+- Remix interface lacks labels
+
+- Cycle count on selection screen is shown as normal
+
+- Made for legacy remix and I have no idea how to make it work for latest release
+
+- Starts ending cutscene upon dramatic death
+
+Feel free to ping or DM @hunterglee on discord if you have found any other errors
