@@ -57,11 +57,7 @@ namespace scorerunify
                 {
                     cycleCount += OptionsMenu.moonCycles.Value;
                 }
-                if (cycleCount > 0)
-                {
-                    return -1;
-                }
-                return cycleCount;
+                return -(cycleCount);
             }
             return -1;
         }
@@ -269,22 +265,23 @@ namespace scorerunify
 
             UIelement[] UIArrayElements1 = new UIelement[]
             {
-                new OpSlider(startingCycles, new Vector2(0, 530), 250){max = 100, hideLabel = false},
+                new OpSlider(startingCycles, new Vector2(0, 550), 250){max = 100, hideLabel = false},
             };
             opTab1.AddItems(UIArrayElements1);
             UIelement[] UIArrayElements2 = new UIelement[]
             {
-                new OpSlider(pebblesCycles, new Vector2(0, 430), 250) { max = 100, hideLabel = false },
+                new OpSlider(pebblesCycles, new Vector2(0, 475), 250) { max = 100, hideLabel = false },
             };
             opTab1.AddItems(UIArrayElements2);
             UIelement[] UIArrayElements3 = new UIelement[]
             {
-                new OpSlider(moonCycles, new Vector2(0, 330), 250) { max = 100, hideLabel = false },
+                new OpSlider(moonCycles, new Vector2(0, 425), 250) { max = 100, hideLabel = false },
             };
             opTab1.AddItems(UIArrayElements3);
         }
         public static Configurable<int> startingCycles;
         public static Configurable<int> pebblesCycles;
         public static Configurable<int> moonCycles;
+
     }
 }
